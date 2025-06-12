@@ -1,17 +1,14 @@
 # weather_data_downloader
-This is my pipeline for downloading Government Weather Data, and using it to train a
-machine learning model to predict daily weather variables. I personally use it for 
-informed camping decisions!
+Use this code for downloading daily Government Weather Data. It is high quality data that can be used for data analysis or machine learning.
 
-- 1) Gridmet_DataDownload_and_Processing.py
-    - User must go to the bottom of the file and input the following in the main function:
-            - Input the name of their output path csv
-            - Input the list of gridmet variables you want (you can see a list of variables 
-            at the bottom of this READ_ME)
-            - Input the starting year of data you want (earliest year is 1979)
+- main.py
+    - User must go to top of the file and set the input arguments:
+            - OUTPUT_PATH: The name of output csv where data is downloaded.
+            - START_YEAR: Starting year of data you want (earliest year is 1979)
+            - END_YEAR: Last year of data you want (goes until present which is 2025 right now)
             - Input the last year of data you want (goes until present which is 2025 right now)
-            - Input the latitude of your target location (I automatically set it to Joshua Tree)
-            - Input the longitude of your target location (I automatically set it to Joshua Tree)
+            - LATITUDE: The latitude of your target location (I automatically set it to Joshua Tree)
+            - LONGITUDE: The longitude of your target location (I automatically set it to Joshua Tree)
 
     - This is a py file that pulls nc files from Gridmet, which is a public government weather website
     - nc files are an interesting data object that each contain a year's worth of weather data for 
