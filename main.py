@@ -9,10 +9,9 @@ import os
 import xarray as xr
 import shutil
 
-TARGETS = ["tmmx"]
-#["tmmx","tmin","rmax","rmin","vs", "bi","erc","pr","srad","vpd","etr","fm100","fm1000","pet","sph","th"]
+TARGETS = ["tmmx","tmin","rmax","rmin","vs", "bi","erc","pr","srad","vpd","etr","fm100","fm1000","pet","sph","th"]
 OUTPUT_PATH = "Joshua_Tree_Gridmet.csv"
-START_YEAR = 2024
+START_YEAR = 2006
 END_YEAR = 2025
 
 LATITUDE = 33.8734
